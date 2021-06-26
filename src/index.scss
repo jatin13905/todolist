@@ -1,0 +1,346 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+@mixin margin {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(8, 8, 53);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+                        // PC-view  
+
+@media (min-width: 1000px) and (max-width: 2000px) {
+  .div_main {
+    box-shadow: 0px 1px 10px black;
+    width: 50%;
+    margin:auto;
+    border: 3px solid black;
+    background: rgb(191, 180, 46);
+    background: linear-gradient(
+      90deg,
+      rgba(191, 180, 46, 1) 2%,
+      rgba(105, 13, 181, 0.8746849081429446) 61%,
+      rgba(9, 9, 17, 0.6113795860140931) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    height: 100vh;
+  }
+  h1 {
+    background-color: black;
+    color: grey;
+    margin-bottom: 2%;
+    font-size: 2.5em;
+    padding: 1%;
+  }
+  .logo-todo{
+    position: absolute;
+    margin-top: 0.4%;
+    margin-left:1%;
+  }
+  div {
+    @include margin();
+    text-align: center;
+  }
+  .logo {
+    width: 12%;
+    border-radius: 10%;
+  }
+  .list {
+    background-color: white;
+    width: 40%;
+    padding: 1%;
+    margin:auto;
+    list-style-type: none;
+    border-radius: 3%;
+    background-color: rgb(235, 125, 180);
+    text-transform: capitalize;
+    font-size: 1.2em;
+  }
+  .add-btn {
+    padding: -8%;
+    font-size: 2.55em;
+    display: inline;
+    color: rgba(69, 206, 42, 0.897);
+    background-color: white;
+    position: absolute;
+
+    &:hover{
+      box-shadow: 0px 2px 8px rgba(29, 117, 12, 0.897);
+      border: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .del-btn {
+    float: right;
+    color: red;
+    font-size: 1.3em;
+
+    &:hover{
+      box-shadow: 0px 0px 5px red;
+      border: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .input {
+    padding: 1%;
+    display: inline;
+    line-height: 20px;
+    border: none;
+    width: 60%;
+    margin: auto;
+    font-size: 1.3em;
+    text-transform: capitalize;
+  }
+  .rmall-btn {
+    width: 15%;
+    padding: 1%;
+    margin:auto;
+    background-color: grey;
+    font-size: 1em;
+    margin-top: 5%;
+    &:hover{
+      background-color: rgb(228, 27, 27);
+      box-shadow: 0px 0px 12px white;
+      border: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .input-div {
+    display: inline;
+    margin-top: 10% !important;
+  }
+}
+
+                              // tablet-view
+
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .div_main {
+    box-shadow: 0px 1px 7px black;
+    width: 70%;
+    margin:auto;
+    border: 3px solid black;
+    background: rgb(191, 180, 46);
+    background: linear-gradient(
+      90deg,
+      rgba(191, 180, 46, 1) 2%,
+      rgba(105, 13, 181, 0.8746849081429446) 61%,
+      rgba(9, 9, 17, 0.6113795860140931) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    height: 100vh;
+  }
+  h1 {
+    background-color: black;
+    color: grey;
+    margin-bottom: 2%;
+    font-size: 2.5em;
+    padding: 1%;
+  }
+  .logo-todo{
+    position: absolute;
+    margin-top: 0.4%;
+    margin-left:1%;
+  }
+  div {
+    @include margin();
+    text-align: center;
+  }
+  .logo {
+    width: 12%;
+    border-radius: 10%;
+  }
+  .list {
+    background-color: white;
+    width: 40%;
+    padding: 1%;
+    margin:auto;
+    list-style-type: none;
+    border-radius: 3%;
+    background-color: rgb(235, 125, 180);
+    text-transform: capitalize;
+    font-size: 1.2em;
+  }
+  .add-btn {
+    padding: -8%;
+    font-size: 2.4em;
+    display: inline;
+    color: rgba(69, 206, 42, 0.897);
+    background-color: white;
+    position: absolute;
+
+    &:hover{
+      box-shadow: 0px 2px 8px rgba(29, 117, 12, 0.897);
+      border: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .del-btn {
+    float: right;
+    color: red;
+    font-size: 1.3em;
+
+    &:hover{
+      box-shadow: 0px 0px 5px red;
+      border: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .input {
+    padding: 1%;
+    display: inline;
+    line-height: 20px;
+    border: none;
+    width: 60%;
+    margin: auto;
+    font-size: 1.3em;
+    text-transform: capitalize;
+  }
+  .rmall-btn {
+    width: 15%;
+    padding: 1%;
+    margin:auto;
+    background-color: grey;
+    font-size: 1em;
+    margin-top: 5%;
+    &:hover{
+      background-color: rgb(228, 27, 27);
+      box-shadow: 0px 0px 12px white;
+      border: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .input-div {
+    display: inline;
+    margin-top: 10% !important;
+  }
+}
+
+                              // mobile-view
+
+@media (max-width: 500px) {
+  .div_main {
+    box-shadow: 0px 1px 5px black;
+    width: 90%;
+    margin:auto;
+    border: 3px solid black;
+    background: rgb(191, 180, 46);
+    background: linear-gradient(
+      90deg,
+      rgba(191, 180, 46, 1) 2%,
+      rgba(105, 13, 181, 0.8746849081429446) 61%,
+      rgba(9, 9, 17, 0.6113795860140931) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    height: 100vh;
+  }
+  h1 {
+    background-color: black;
+    color: grey;
+    margin-bottom: 2%;
+    font-size: 2.5em;
+    padding: 1%;
+  }
+  .logo-todo{
+    position: absolute;
+    margin-top: 0.4%;
+    margin-left:1%;
+  }
+  div {
+    @include margin();
+    text-align: center;
+  }
+  .logo {
+    width: 12%;
+    border-radius: 10%;
+  }
+  .list {
+    background-color: white;
+    width: 60%;
+    overflow: auto;
+    padding: 1%;
+    margin:auto;
+    list-style-type: none;
+    border-radius: 3%;
+    background-color: rgb(235, 125, 180);
+    text-transform: capitalize;
+    font-size: 1.2em;
+  }
+  .add-btn {
+    padding: -8%;
+    font-size: 2.1em;
+    display: inline;
+    color: rgba(69, 206, 42, 0.897);
+    background-color: white;
+    position: absolute;
+    margin-top: 4.3%;
+
+    &:hover{
+      box-shadow: 0px 2px 8px rgba(29, 117, 12, 0.897);
+      border: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .del-btn {
+    float: right;
+    color: red;
+    font-size: 1.3em;
+
+    &:hover{
+      box-shadow: 0px 0px 5px red;
+      border: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .input {
+    padding: 1%;
+    display: inline;
+    line-height: 20px;
+    border: none;
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    font-size: 1.3em;
+    text-transform: capitalize;
+  }
+  .rmall-btn {
+    width: 25%;
+    padding: 1%;
+    margin:auto;
+    margin-top: 5%;
+    background-color: grey;
+    font-size: 1em;
+
+    &:hover{
+      background-color: rgb(228, 27, 27);
+      box-shadow: 0px 0px 12px white;
+      border: none;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  .input-div {
+    display: inline;
+    margin-top: 10% !important;
+  }
+}
+
